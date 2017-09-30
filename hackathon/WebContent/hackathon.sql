@@ -40,7 +40,6 @@ CREATE TABLE `company` (
 
 LOCK TABLES `company` WRITE;
 /*!40000 ALTER TABLE `company` DISABLE KEYS */;
-INSERT INTO `company` VALUES ('50000','Sahil','Verma','sahilverma1296@gmail.com','sahilverma1296','sahil890','8761446102'),('50001','kuldeep','chutiya','kuldeepchutiya@gmail.com','kuldeep321','kuldeep123','8765312345');
 /*!40000 ALTER TABLE `company` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -95,7 +94,6 @@ CREATE TABLE `links` (
 
 LOCK TABLES `links` WRITE;
 /*!40000 ALTER TABLE `links` DISABLE KEYS */;
-INSERT INTO `links` VALUES (1,'kuldeep','kuldeepchutiya@gmail.com',NULL,'googledrive.com','50','2017-12-22'),(2,'kuldeep','kuldeepchutiya@gmail.com','8765312345','rbc.com','40','2017-02-12');
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -150,7 +148,6 @@ CREATE TABLE `typist` (
 
 LOCK TABLES `typist` WRITE;
 /*!40000 ALTER TABLE `typist` DISABLE KEYS */;
-INSERT INTO `typist` VALUES ('50000','Sahil','Verma','agent484749@gmail.com','agent484749','agent484749','9821368067'),('50001','Kuldeep','Chutiya','kuldeepchutiya@gmail.com','chitiya','number1','1234567890'),('50003','Akshita','Tyagi','akshita123@gmail.com','akshu23','akshu23','8791301');
 /*!40000 ALTER TABLE `typist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -163,4 +160,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-30 22:14:34
+-- Dump completed on 2017-09-30 23:06:02
