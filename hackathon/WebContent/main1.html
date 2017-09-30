@@ -1,0 +1,223 @@
+<html>
+<head>
+  <title>Main_page</title>
+  <link rel="stylesheet"  type="text/css" href="main.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style> .ui-tooltip {
+    width: 210px;
+  }
+  </style>
+</head>
+<body>
+<div id="big_container">
+
+<div id="container_1">
+  <font style="text-align:center;">website title</font>
+  <button class="login_button" id="myBtn">LOG IN</button>
+
+
+
+
+
+</div>
+
+<div id="container_2">
+  <div id="container_2_A">
+    description
+  </div>
+  <div id="container_2_B">
+   <img src="C:\Users\agent 47\workspace\hackathon\WebContent\logo.png">
+  </div>
+</div>
+
+<div id="container_3">
+  donations
+</div>
+
+<div id="container_4">
+  <div id="container_4_small">
+    <br>
+  <font style="font-family:sans-serif;font-size:26px;">Feel free to <font style="font-weight:bold;">Contact Us</font></font>
+  <br><br><br>
+  <form id="form_contact" action="login.jsp" method="post">
+  <label><font>Email address</font></label><label style="margin-left:450px;"><font>Mobile</font></label>
+  <br>
+  <input type="text" name="email" id="Email" title="Please provide email ID"/><input type="number" style="margin-left:180px;"name="num" title="please provide Mobile number" id="pass2"/>
+  <br><br><br>
+  <label style="margin-right:620px;">Message</label><br>
+  <textarea rows="6" cols="95" id="message" name="text_area" title="please enter some messages" style="resize:none;"></textarea>
+  <br><br>
+  <input type="submit" value="SUBMIT" id="submit2"/>
+  <br>
+</form>
+</div>
+</div>
+<div id="container_5">
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&#10008;</span>
+      <h2>LOG IN</h2>
+    </div>
+    <div class="logo_image">
+    </div>
+    <form  align="center" id="log_in_form">
+   <input type="text" name="username" id="user" placeholder="USERNAME" title="please provide Username"/>
+   <br><br>
+   <input type="password" name="password" id="pass" placeholder="PASSWORD" title="please Enter password"/>
+   <br><br>
+   <select name="Account type" style="background-color:hsla(0,0%,50%,0.2);" id="Check" title="choose Account type">
+    <option>Account type</option>
+    <option value="company">company</option>
+    <option value="typist">Typist</option>
+   </select>
+   <br><br>
+   <input type="checkbox" name="checkbox" value="check" title="keep me looged in">Keep me logged in</input>
+   <br><br>
+   <input type="submit" value="LOG IN" title="LOG IN" id="log_in"/>
+    </form>
+    <br>
+     <p class="neeche">Forgot password</p>
+     <p class="neeche">New to the WEbsite name!!  Sign up <a href="signup_website.html">here</a></p>
+  </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+$(document).ready(function()
+{
+  $('#myBtn').click(function()
+{
+  $('.modal').css('display','block');
+});
+});
+
+$(document).ready(function()
+{
+ $('.close').click(function()
+ {
+    $('.modal').css('display','none');
+ });
+});
+
+$(document).ready(function()
+{
+  $('#log_in_form').validate(
+    {
+      rules:
+      {
+        username:"required",
+        password:"required",
+      },
+      messages:
+      {
+        username:"enter username",
+        password:"enter password",
+      },
+      submitHandler:function(form)
+      {
+        form.submit();
+      }
+    });
+});
+
+/*function validate()
+  var user=document.getElementById("user");
+  var pass=document.getElementById("pass");
+  var check=document.getElementById("Check");
+  if(user.value==null||user.value=="")
+  {
+    alert("username should not be blank");
+    user.focus();
+    return false;
+  }
+  else if(pass.value==null||pass.value=="")
+  {
+    alert("password should not be blank");
+    pass.focus();
+    return false;
+  }
+  else if(check.value=="Account type")
+  {
+    alert("please choose account type");
+    check.focus();
+    return false;
+  }
+  else
+      return true;
+}*/
+
+$(document).ready(function()
+{
+   $('#form_contact').validate(
+     {
+        rules:
+        {
+          email:"required",
+          num:"required",
+          text_area:"required",
+        },
+        messages:
+        {
+          email:'&#10008',
+          num:'&#10008',
+          text_area:'&#10008',
+        },
+        submitHandler:function(form){
+          form.submit();
+        }
+
+     });
+});
+
+$( function() {
+    var tooltips = $( "[title]" ).tooltip({
+      position: {
+        my: "left top",
+        at: "right+5 top-5",
+        collision: "none"
+      }
+    });
+    $( '#submit2' )
+      .text( "SUBMIT" )
+      .button()
+      .on( "click", function() {
+        tooltips.tooltip( "open" );
+      })
+      .insertAfter( '#form_contact' );
+  } );
+
+
+  $( function() {
+      var tooltips = $( "[title]" ).tooltip({
+        position: {
+          my: "left top",
+          at: "right+5 top-5",
+          collision: "none"
+        }
+      });
+      $( '#log_in' )
+        .text( "LOG IN" )
+        .button()
+        .on( "click", function() {
+          tooltips.tooltip( "open" );
+        })
+        .insertAfter( '#log_in_form' );
+    } );
+
+</script>
+
+
+</body>
+</html>

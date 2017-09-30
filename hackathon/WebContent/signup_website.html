@@ -1,0 +1,90 @@
+<html>
+<head>
+  <title>Sign up</title>
+  <link rel="stylesheet" type="text/css" href="signup_website.css">
+  <script src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js" type="text/javascript"></script>
+<!--
+  <script type="text/javascript">
+   $(document).ready(function()
+   {
+     $("#registerform").validate({
+
+       messages:{
+          firstname:"please enter your first name"
+       },
+
+       rules:
+       {
+         firstname:"required"
+       },
+
+
+     });
+   }
+
+
+ );
+
+  </script>
+-->
+</head>
+<body>
+<div class="big_container">
+
+<div class="heading">
+</div>
+
+<div class="sign_up_form">
+  <div class="sign_form">
+  <form align="left" id="registerform" method="post" action="signup_website.jsp">
+
+     <br><br>
+    <label>Account type</label>
+    <select name="Account_type" onselect="Addfields()" id="check">
+      <option>--choose Type--</option>
+      <option value="company">company</option>
+      <option value="Typist">Typist</option>
+    </select>
+
+    <br><br><label>Firstname</label><input type="text" name="firstname" id="fname"/>
+
+    <br><br><label>Lastname</label><input type="text" name="lastname" id="lname"/>
+
+    <br><br>
+    <label>Email ID</label>
+    <input type="text" name="email" id="email"/>
+
+    <br><br>
+    <label>Username</label>
+    <input type="text" name="username" id="user"/>
+
+    <br><br>
+    <label>Password</label>
+    <input type="password" name="pass" id="pass"/>
+
+     <br><br>
+     <label>Phone number</label>
+     <input type="text" name="phone_no" id="phone"/>
+
+     <br><br>
+     <label>Aadhar Number(UIDAI)</label>
+     <input type="text" name="aadhar" id="aadhar"/>
+
+     <br><br>
+     <input type="checkbox" name="checkbox" style="margin-left:50px;"><font style="font-family:cursive;font-size:15px;">I agree to the <a href="tnc.html" target="blank">Terms and Conditions</a></font></input>
+
+    <br><br>
+    <input type="submit" value="SIGN UP"/>
+
+
+  </form>
+</div>
+  <div class="logo">
+
+  </div>
+</div>
+</div>
+<div class="container2">
+</div>
+</body>
+</html>

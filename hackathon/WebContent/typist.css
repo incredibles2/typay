@@ -1,0 +1,225 @@
+.big_container_typist
+{
+
+  width:auto;
+  height:auto;
+}
+.container_1_typist
+{
+  height:100px;
+  width:inherit;
+  margin: 5 5 5 5;
+}
+.container_2_typist
+{
+  width:inherit;
+  height:50%;
+  margin:5 5 5 5;
+}
+.typist_name
+{
+   height:50%;
+   width:87%;
+   margin-bottom: 5;
+   float:left;
+}
+.typist_photo
+{
+  height:50%;
+  width:12%;
+  float:right;
+  background-image: url("04.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.money_earned
+{
+  height:20%;
+  width:22%;
+  float:left;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.submissions
+{
+  height:20%;;
+  width:22%;
+  float:right;
+  text-align: center;
+  margin-top: 40px;
+  margin-right:15px;
+}
+.container_3_typist
+{
+  width:100%;
+  height:auto;
+  margin: 5 5 5 5;
+
+}
+.project_div
+{
+  width:70%;
+  height:150px;
+  margin-left:190px;
+  float:center;
+  border-color: RED;
+  border-style: solid;
+  border-width: thin;
+}
+.div1
+{
+  width:100%;
+  height:50%;
+  overflow:hidden;
+}
+.div1_A
+{
+  height:80%;
+  width:65%;
+  float:left;
+  margin-left:3px;
+  margin-top:3px;
+  text-align: center;
+
+}
+.div1_B
+{
+   height:80%;
+   width:30%;
+   float:right;
+   margin-top:3px;
+   margin-right:3px;
+   text-align: center;
+
+}
+.div2
+{
+    width:100%;
+    height:50%;
+}
+.div2_A{
+  height:80%;
+  width:20%;
+  float:left;
+  text-align: center;
+
+}
+.div2_B{
+ height:80%;
+ width:20%;
+ float:right;
+ text-align: center;
+
+}
+.div2_C{
+height:80%;
+width:60%;
+margin:auto;
+}
+.div2_C1
+{
+  height:100%;
+  width:50%;
+  float:left;
+  text-align: center;
+}
+.div2_C2
+{
+  height:100%;
+  width:50%;
+  float:right;
+  text-align: center;
+}
+#sign_out
+{
+   border-radius: 3px;
+   background-color: hsla();
+   float:right;
+   margin-right: 7px;
+   margin-top: 5px;
+}
+#sign_out:hover
+{
+  cursor: pointer;
+}
+#home
+{
+  border-radius:3px;
+  background-color: hsla();
+  float:right;
+  margin-top:5px;
+  margin-right: 9px;
+}
+#home:hover
+{
+  cursor:pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    height:70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 6px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 1px 0px;
+    background-color: hsla(300,100%,25%,1.0);
+    color:white;
+    font-family: verdana;
+    font-size: 15px;
+    text-align: center;
+}
